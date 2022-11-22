@@ -1,0 +1,176 @@
+.board {
+    height: 80vh;
+    width: 80vh;
+    outline: 3px solid black;
+    margin-top: 5rem;
+    box-sizing: border-box;
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-area:b;    
+}
+
+body{
+    display:flex;
+    justify-content:space-around;
+    align-content:space-around;
+    background-color: beige;
+}
+
+.game{
+    height: 80vh;
+    width: 80vh;
+    justify-content:space-around;
+}
+
+.white{
+    background-color:burlywood;
+}
+
+.black{
+    background-color:darkgoldenrod;
+    display:flex;
+    justify-content:space-around;
+    align-content:center;
+    height: 10vh;
+    width: 10vh;
+    
+}
+
+.piece{
+    height:3rem;
+    width:3rem;
+    border-radius:50% ;
+    margin:auto auto;
+}
+
+.black-piece{
+    background-color:black;
+    
+}
+
+.white-piece{
+    background-color:wheat;
+    
+}
+
+.chosen{
+    
+    /* background-color:gold; */
+    /* background-color:rgba(255, 255, 159,0.);  */
+    /* outline: 1.4rem solid rgba(255, 255, 159,0.5);*/
+    box-shadow: rgba(255, 40, 200, 0.5);
+        box-sizing: border-box;
+        opacity: 0.5;
+} 
+
+.option{
+    background-color: brown;
+    cursor: pointer;
+}
+
+.queen{
+    outline: 1rem groove blueviolet;
+}
+
+.transperent{
+    height: 100vh;
+    width: 100vw;
+    background-color:rgba(0,0,0,0.5); 
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    grid-template-areas: 'a,b,c';
+    z-index:2 ;
+    position: fixed;
+    bottom: 0;      
+}
+
+.endGameModal{
+    height: 20vh;
+    width: 80vw;
+    font-size:5rem;
+    background-color: cadetblue;
+    z-index:4;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:25px;
+    outline: .4rem solid black; 
+}
+
+.burned{
+    background-color:orange;
+}
+
+.button{
+    height: 14vh;
+    width: 10vw; 
+    border-radius:50rem;
+    background-color:burlywood;  
+    outline: .5rem solid black; 
+    display:flex;
+    justify-content:space-around;
+    text-align: center;
+    box-sizing: border-box;
+    padding:1.2rem;
+    font-size: 1.8rem;
+    font-weight: bold;
+    grid-area: a;
+    margin-top: 20rem;
+    cursor: pointer;
+}
+
+.small-button{
+    height: 6vh;
+    width: 6vw; 
+    border-radius:50rem; 
+    outline: .2rem solid black; 
+    position: relative;
+    display:flex;
+    justify-content:space-around;
+    text-align: center;
+    box-sizing: border-box;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-left:2.5rem ;
+    padding:.5rem;
+    background-color:burlywood;  
+    cursor: pointer;
+}
+
+.new-game-button{
+    height: 6vh;
+    width: 20vw; 
+    border-radius:50rem; 
+    outline: .2rem solid black; 
+    position: relative;
+    display:flex;
+     justify-content:space-around;
+    text-align: center; 
+    box-sizing: border-box;
+    font-size: 2rem;
+    font-weight: bold;
+    padding:.5rem;
+    background-color:burlywood;  
+    cursor: pointer;
+    margin-left: 4rem;
+    margin-top: 1.2rem;
+}
+
+.turn-box{
+    height: 30vh;
+    width: 15vw; 
+    border-radius:10px;
+    background-color:rgb(135, 168, 222);  
+    outline: .5rem solid black; 
+    display:flex;
+    justify-content:space-around;
+    text-align: center;
+    box-sizing: border-box;
+    padding:3rem;
+    font-size: 3rem;
+    font-weight: bold;
+    grid-area: c;
+    margin-right: 4rem;
+    margin-top: 12rem;
+}
